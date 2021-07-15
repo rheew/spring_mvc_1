@@ -5,11 +5,12 @@ import com.example.spring_mvc_1.repository.MemberRepository;
 import com.example.spring_mvc_1.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService { //commad shift t
 
     private final MemberRepository memberRepository;
